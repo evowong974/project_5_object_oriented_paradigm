@@ -29,29 +29,29 @@ public class Bird extends Animal implements Comparable <Bird>  {
         // Choose a random habitat from the list of 10 habitats
         String [] habitats = {"forest", "desert", "grassland", "tundra", "rainforest", "ocean", "freshwater", "mountain", "swamp", "city"};
         this.habitat = habitats[(int) (Math.random() * 10)];
-        // conditional statements of the bird's species and its habitat
-        if (this.species.equals("Eagle")) {
-            this.habitat = "forest";
-        } else if (this.species.equals("Hawk")) {
-            this.habitat = "desert";
-        } else if (this.species.equals("Owl")) {
-            this.habitat = "grassland";
-        } else if (this.species.equals("Falcon")) {
-            this.habitat = "tundra";
-        } else if (this.species.equals("Parrot")) {
-            this.habitat = "rainforest";
-        } else if (this.species.equals("Penguin")) {
-            this.habitat = "ocean";
-        } else if (this.species.equals("Duck")) {
-            this.habitat = "wetlands";
-        } else if (this.species.equals("Goose")) {
-            this.habitat = "pond";
-        } else if (this.species.equals("Swan")) {
-            this.habitat = "marsh";
-        } else if (this.species.equals("Hummingbird")) {
-            this.habitat = "subtropical";
-        }
-    }
+    //     // conditional statements of the bird's species and its habitat
+    //     if (this.species.equals("Eagle")) {
+    //         this.habitat = "forest";
+    //     } else if (this.species.equals("Hawk")) {
+    //         this.habitat = "desert";
+    //     } else if (this.species.equals("Owl")) {
+    //         this.habitat = "grassland";
+    //     } else if (this.species.equals("Falcon")) {
+    //         this.habitat = "tundra";
+    //     } else if (this.species.equals("Parrot")) {
+    //         this.habitat = "rainforest";
+    //     } else if (this.species.equals("Penguin")) {
+    //         this.habitat = "ocean";
+    //     } else if (this.species.equals("Duck")) {
+    //         this.habitat = "wetlands";
+    //     } else if (this.species.equals("Goose")) {
+    //         this.habitat = "pond";
+    //     } else if (this.species.equals("Swan")) {
+    //         this.habitat = "marsh";
+    //     } else if (this.species.equals("Hummingbird")) {
+    //         this.habitat = "subtropical";
+    //     }
+ }
 
     // getters and setters
     public int getwingspan() {
@@ -85,6 +85,10 @@ public class Bird extends Animal implements Comparable <Bird>  {
     public void makeSound() {
         System.out.println("Chirp chirp, squawk squawk, tweet tweet");
 
+    }
+
+    public void eat() {
+        System.out.println("The bird is eating.");
     }
 
     // Method that uses the compareTo method to compare the habitat of two birds

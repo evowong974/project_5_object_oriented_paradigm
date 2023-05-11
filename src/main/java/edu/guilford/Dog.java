@@ -56,6 +56,10 @@ public class Dog extends Animal implements Comparable<Dog>{
     public void makeSound() {
         System.out.println("bark bark, woof woof");
     }
+
+    public void eat() {
+        System.out.println("The dog is eating.");
+    }
     
     // Use the compareTo method to compare two dog's breeds
     @Override

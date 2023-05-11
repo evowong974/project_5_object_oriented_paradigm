@@ -1,5 +1,7 @@
 package edu.guilford;
 
+import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -47,11 +49,21 @@ public class AnimalComparison
         cats[0].eat();
         // Demonstrate the compareTo method
         System.out.println("\n" + "Demonstrate the compareTo method: ");
-        System.out.println("Compare the habitat of two birds: ");
-        System.out.println(birds[0].compareTo(birds[1]));
-        System.out.println("Compare the breeds of two dogs: ");
-        System.out.println(dogs[0].compareTo(dogs[1]));
-        System.out.println("Compare the eye colors of two cats: ");
-        System.out.println(cats[0].compareTo(cats[1]));
+        System.out.println("\n" + "Comparing two birds: ");
+        System.out.println("\n" + "\n" + "Pre-sorting: ");
+        System.out.println("Bird 1: " + birds[0].getHabitat());
+        System.out.println("Bird 2: " + birds[1].getHabitat());
+        System.out.println("Bird 3: " + birds[2].getHabitat());
+
+        // sort using Arrays.sort method
+        Arrays.sort(birds);
+
+        System.out.println("\n" + "Post-sorting: ");
+        System.out.println("Bird 1: " + birds[0].getHabitat());
+        System.out.println("Bird 2: " + birds[1].getHabitat());
+        System.out.println("Bird 3: " + birds[2].getHabitat());
+        
+
+
     }
 }

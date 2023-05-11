@@ -33,6 +33,10 @@ public class Cat extends Animal implements Comparable<Cat> {
         System.out.println("meow meow, purr, purr");
     }
 
+    public void eat() {
+        System.out.println("The cat is eating.");
+    }
+
     // compareTo method that compares two cats on their eye color
     @Override
     public int compareTo(Cat cat) {
